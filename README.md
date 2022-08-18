@@ -6,6 +6,7 @@ Contexto:
 Una compañia cuenta con un sinnumero de empleados y su  un problema principal va relacionado al numero de vacaciones por empleado que han tomado a lo largo del tiempo. El sistema actual no agrega completamente los dias de vacaciones por cada empleado y tampoco remueve los dias vacacionales ya tomados por los mismos, lo cual causa una disputa interna en la compañia. El CEO de la misma estableció que cada empleado tiene derecho a dos dias de vacaciones y tres dias de falta a causa de enfermedad como nivel basico(los cuales pueden cambiar dependiendo del diagnostico medico).
 
 Proceso
+
 Para solucionar el problema se hara un algoritmo el cual tenga diferentes variables, cada una con un proposito especifico. 
 - Por ejemplo una que guarde el numero de vacaciones disponibles por empleado y consecuentemente se le reste el numero de dias que el individuo seleccione y lo mismo ocurrira con los dias de enfermedad. 
 - Asi mismo se le agregara a la variable de dias disponibles un los dias de vacaciones a inicio de mes. Todo esto con el objetivo de evitar mas problemas con el sistema. 
