@@ -19,4 +19,4 @@ Por ultimo con toda la informacion explicada anteriormente se espera que nos ent
 
 Interes:
 
-Este proyecto me parece interesante ya que resolver un problema que pudiera pareceer bastante simple deberia de ser algo basico sin embargo; puede ser un problema comun, real y que alguien o alguna empresa icluso de las mas grandes del mundo puede estar experimentando ya sea que el programa no cumple con su funcion o no es lo suficientemente amigable con el usuario.  
+Este proyecto nace de una experiencia personal precisamente con un sistema de una empresa mundial que tiene una situacion simial con la cual se relaciona este proyecyo. Me parece interesante ya que resolver un problema que pudiera pareceer bastante simple deberia de ser algo basico sin embargo; puede ser un problema comun, real y que alguien o alguna empresa icluso de las mas grandes del mundo puede estar experimentando ya sea que el programa no cumple con su funcion o no es lo suficientemente amigable con el usuario.  
