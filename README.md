@@ -10,8 +10,9 @@ Una compañia cuenta con un sinnumero de empleados y su  un problema principal v
 Proceso
 
 Para solucionar el problema se hara un algoritmo el cual tenga diferentes variables, cada una con un proposito especifico. 
+- Menu principal que pregunte al usuario que opcion quiere acceder (vacaciones, enfermedad, numero de dias acumulados etc.)
 - Por ejemplo una que guarde el numero de vacaciones disponibles por empleado y consecuentemente se le reste el numero de dias que el individuo seleccione y lo mismo ocurrira con los dias de enfermedad. 
-- Asi mismo se le agregara a la variable de dias disponibles un los dias de vacaciones a inicio de mes. Todo esto con el objetivo de evitar mas problemas con el sistema. 
+- Asi mismo se le agregara a la variable de dias disponibles un los dias de vacaciones a inicio de mes. Todo esto con el objetivo de evitar mas problemas con el sistema (Agregar dias). 
 - La idea es utilizar user input y algun tipo de loop los cuales con la informacion que proporcione el usuario recojan, editen y actualicen la informacion recibida. 
 Por ultimo con toda la informacion explicada anteriormente se espera que nos entregue el resultado esperado. 
 
