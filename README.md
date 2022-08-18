@@ -13,4 +13,4 @@ Para solucionar el problema se hara un algoritmo el cual tenga diferentes variab
 Por ultimo con toda la informacion explicada anteriormente se espera que nos entregue el resultado esperado. 
 
 Interes:
-Este proyecto me parece interesante ya que resolver un problema que pudiera pareceer bastante simple sin embargo; puede ser un problema comun, real y que alguien o alguna empresa icluso de las mas grandes del mundo puede estar experimentando ya sea que el programa no cumple su funcion o no es lo suficientemente amigable con el usuario.  
+Este proyecto me parece interesante ya que resolver un problema que pudiera pareceer bastante simple deberia de ser algo basico sin embargo; puede ser un problema comun, real y que alguien o alguna empresa icluso de las mas grandes del mundo puede estar experimentando ya sea que el programa no cumple con su funcion o no es lo suficientemente amigable con el usuario.  
