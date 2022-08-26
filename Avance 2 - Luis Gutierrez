@@ -1,0 +1,71 @@
+"""
+
+This proyect aims to adress an issue regarding the system of human resources of a company.
+
+Context:
+The system does not take away nor adds the appropiate days of vacation from the employees.
+According to the CEO, every employee has the right to two days of vacation per month and
+three days of sick leave(not fixed, which could change depending on the medical diagnosis).
+
+"""
+
+# Menu
+""""
+Option 1 --> vacations section
+    Number of vacations days left
+    Take days off
+        Subtracts the number of days selected by employee
+        if the number selected is greater than the number of vacation days left
+            choose less days
+        else
+            subtract the number of days slected from the total number of vacation days
+            
+Option 2 --> Sick Leave
+    Number of sick leave days available
+    Take sick leave days off
+    Select the type if ilness
+        options
+            1) Cold
+            2) Doctor appointment
+            3) Covid
+            4) Gastroenteritis
+            5) Influenza
+            6) Other
+    Depending on the option chosen the system will calculate the number of sick leave days
+    
+Option 3 --> Comulative days
+    Section which will store the number of days available for both sick leave and vacation days,
+    So user can check how many days has more easily
+    
+"""
+
+# Variables 
+vacations_days = 2
+sick_leave_days = 3
+cumulative_days = 0 
+
+# Ask the user(employee) how many days wants to take off
+desired_vacations_days = int(input("Enter the number of vacation day(s) you want to take: "))
+
+
+#If statement that will check if the user has enough days available and update the variable "vacation_days"
+if desired_vacations_days > vacations_days:
+    print("You don't have enough vacation days to take.")
+elif desired_vacations_days < 0:
+    print("The vacation days cannot be lower than zero.")
+else:
+    vacations_days = vacations_days - desired_vacations_days                                       
+    print(int(vacations_days)) # When tranlating to a function use return as well
+  
+
+# Ask the user(employee) how many days wants to take off
+desired_sick_leave_days = int(input("Enter the number of sick_leave_day(s) you want to take: "))
+
+#If statement that will check if the user has enough sick leave days available and update the variable "sick_leave_days"
+if desired_sick_leave_days > sick_leave_days:
+    print("You don't have enough sick leave days to take.")
+elif desired_sick_leave_days <= sick_leave_days:
+    sick_leave_days = sick_leave_days - desired_sick_leave_days                                              
+    print(int(sick_leave_days)) # When tranlating to a function use return as well
+
+# Disclaimer sick leave tab is under construction, for now it only calculates similarly to vacation days 
