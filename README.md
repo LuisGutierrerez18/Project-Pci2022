@@ -1,4 +1,4 @@
-# Project-Pci2022
+# Project-Pci2022 Luis Enrique Gutierrez - A00837481
 
 Este proyecto tiene como objetivo abordar y solucionar un problema de una compañia. 
 
