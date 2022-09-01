@@ -46,7 +46,8 @@ Option 4 --> Exit
 #sick_leave_days = 3
 cumulative_days = 0 
 
-
+# This function aims to calculate the number of vacation days left when the user enters any amount
+# It should check if the entered amount has is less than or equal to the available amount of days
 def vacation_days_calc():
    
     vacations_days = 2
@@ -71,6 +72,8 @@ vacation_days_calc()
 
 print(" ") #Space in console(terminal) between vacation days and sick leave days
 
+# This function aims to calculate the number of sick leave days left when the user enters any amount
+# It should check if the entered amount has is less than or equal to the available amount of days
 def sick_leave_days():
     
     sick_leave_days = 3
