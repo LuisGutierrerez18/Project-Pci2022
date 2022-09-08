@@ -136,9 +136,9 @@ return_to_menu()
 print("End of the program")
 
 # Disclaimer sick leave tab is under construction, for now it only calculates similarly to vacation days
-"""
+""""
 Note:
 Fix
 After some time of running over and over, if you enter more than the days available it ends the program.
 It should ask again to return to the menu.
-"""
+""""
