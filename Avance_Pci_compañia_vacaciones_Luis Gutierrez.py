@@ -44,9 +44,8 @@ Option 4 --> Exit
 # Variables 
 #vacations_days = 2
 #sick_leave_days = 3
-cumulative_days = 0 
+#cumulative_days = 0 
 
-# //// Comulative days tab pending ////
 
 def menu():
     print("")
@@ -64,7 +63,7 @@ def menu():
     if option_choice == 1:
         vacation_days_calc()
     elif option_choice == 2:
-        sick_leave_days() 
+        sick_leave_tab() 
          
                      
 def return_to_menu():
@@ -82,7 +81,7 @@ def return_to_menu():
 # This function aims to calculate the number of vacation days left when the user enters any amount
 # It should check if the entered amount has is less than or equal to the available amount of days
 def vacation_days_calc():
-   
+    
     vacations_days = 2
     # Ask the user(employee) how many days wants to take off
     desired_vacations_days = int(input("Enter the number of vacation day(s) you want to take: "))
@@ -99,6 +98,8 @@ def vacation_days_calc():
         print( "Vacation day(s) left:")
         print(int(vacations_days))
         print("Day(s) witdrawn succesfully")
+    
+    print() 
         
     return desired_vacations_days
 
@@ -108,7 +109,14 @@ print(" ") #Space in console(terminal) between vacation days and sick leave days
 
 # This function aims to calculate the number of vacation days left when the user enters any amount
 # It should check if the entered amount has is less than or equal to the available amount of days
-def sick_leave_days():
+def sick_leave_tab():
+    
+    ilness_option_one = "Cold"
+    ilness_option_two = "Medical Appointment"
+    ilness_option_three = "Covid"
+    ilness_option_four = "Gastroenteritis"
+    ilness_option_five = "Influenza"
+    ilness_option_six = "Other"
     
     sick_leave_days = 3
     # Ask the user(employee) how many days wants to take off
@@ -124,13 +132,71 @@ def sick_leave_days():
         print( "Sick leave day(s) left:")
         print(int(sick_leave_days))
         print("Day(s) witdrawn succesfully")
-
+    
+        print()
+        print("Select one of the options below to justify your absence")
+        print(ilness_option_one)
+        print(ilness_option_two)
+        print(ilness_option_three)
+        print(ilness_option_four)
+        print(ilness_option_five)
+        print(ilness_option_six)
+        option_selector = input("Select one option")
+            
+    print("Exiting...")
+        
     return desired_sick_leave_days
+"""
+def total_days():
+    cumulative_days = 0 
+    cumulative_days = sick_leave_days + vacation_days
+    print("Total days(between vacation and sick leave) left" + cumulative_days)
+"""
+# ///Comulative days tab still in progrress...///
 
+# This function aims to ask the user for their password in order to access the system
+# There is a default password to enter just to check of it works
+# Asks the user if he/she has a password if not create a password, has three tries to access the system
+# Check if the password match, if not ask again, if they do match grant acces to menu
+def password():
+    
+    password = "default"
+    tries = 3
+    
+    print("Welcome to the human resources page. To enter the menu you have to log in.")
+    have_account = input("Do you have an account? Enter 1 for yes enter 2 for no. ")
+    
+    while True:
+        if have_account == 1:
+    # Note: Does not perform the action below
+            enter_password = input("Enter your password: ")
+            for x in range(tries):
+                if enter_password != password:
+                    tries -= 1
+                elif enter_password != enter_password:
+                    tries -= 1
+                
+                tries -= 1
+      
+        else:
+            new_password = input("Create new password: ")
+            menu()
+        
+        while enter_password != password | enter_password != new_password:
+            try_again = input("Try again")
+        
+            if try_again == password | try_again == enter_password:
+                menu()
+                break
+            else:
+                try_again
+  
+           
 #sick_leave_days()
 
-menu()
+password()
 return_to_menu()
+total_days() 
 print("End of the program")
 
 # Disclaimer sick leave tab is under construction, for now it only calculates similarly to vacation days
