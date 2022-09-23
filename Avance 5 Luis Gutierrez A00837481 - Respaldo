@@ -168,7 +168,7 @@ def password():
     
     while True:
         if have_account == 1:
-    # Note: Does not perform the action below
+
             enter_password = input("Enter your password: ")
             for x in range(tries):
                 if enter_password != password:
