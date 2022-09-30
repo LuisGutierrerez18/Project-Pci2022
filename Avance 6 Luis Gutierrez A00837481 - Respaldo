@@ -20,7 +20,7 @@ Option 1 --> vacations section
         else
             subtract the number of days slected from the total number of vacation days
             
-Option 2 --> Sick Leave
+Option 2 --> Sick Leave 
     Number of sick leave days available
     Take sick leave days off
     Select the type if ilness
@@ -100,7 +100,7 @@ def vacation_days_calc():
         print("Day(s) witdrawn succesfully")
     
     print() 
-        
+    return_to_menu()   
     return desired_vacations_days
 
 #vacation_days_calc()
@@ -111,16 +111,12 @@ print(" ") #Space in console(terminal) between vacation days and sick leave days
 # It should check if the entered amount has is less than or equal to the available amount of days
 def sick_leave_tab():
     
-    ilness_option_one = "Cold"
-    ilness_option_two = "Medical Appointment"
-    ilness_option_three = "Covid"
-    ilness_option_four = "Gastroenteritis"
-    ilness_option_five = "Influenza"
-    ilness_option_six = "Other"
+    # List with all the diseases available
+    ilness_list = ["1. Cold","2. Covid","3. Gastroenteritis","4. Influeza","5. Medical Appointment", "6. Other"]
     
     sick_leave_days = 3
     # Ask the user(employee) how many days wants to take off
-    desired_sick_leave_days = int(input("Enter the number of sick_leave_day(s) you want to take: "))
+    desired_sick_leave_days = int(input("Enter the number of sick leave day(s) you want to take: "))
 
     #If statement that will check if the user has enough sick leave days available and update the variable "sick_leave_days"
     if desired_sick_leave_days > sick_leave_days:
@@ -134,17 +130,28 @@ def sick_leave_tab():
         print("Day(s) witdrawn succesfully")
     
         print()
-        print("Select one of the options below to justify your absence")
-        print(ilness_option_one)
-        print(ilness_option_two)
-        print(ilness_option_three)
-        print(ilness_option_four)
-        print(ilness_option_five)
-        print(ilness_option_six)
-        option_selector = input("Select one option")
-            
-    print("Exiting...")
         
+        for x in ilness_list:
+            print(x)
+        
+    option_selector = int(input("Select one option: "))
+      
+      # /// Pending Revision ///
+    
+    if option_selector == 6:
+        other_disease = input("Please Specify: ")
+        ilness_list.append(other_disease)
+        
+        claim = input("Is " + other_disease + " this correct: ")
+        if claim == 1:
+            print("Saving...")
+    
+    if option_selector >= 1 | option_selector <= 5:
+        print("Saving...")
+  
+       # Rview functionality if statement above
+    #print("Exiting...")
+    return_to_menu()    
     return desired_sick_leave_days
 """
 def total_days():
@@ -168,7 +175,7 @@ def password():
     
     while True:
         if have_account == 1:
-
+    # Note: Does not perform the action below
             enter_password = input("Enter your password: ")
             for x in range(tries):
                 if enter_password != password:
