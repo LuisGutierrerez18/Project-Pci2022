@@ -1,0 +1,36 @@
+Sub-Competencia: Componente: Listas
+
+Error original: Incorporacion
+
+Cambio realizado: Incorporado
+
+Ejemplo 1
+Sub-Competencia: Listas
+Linea 44
+Error: No habia error solo optimizacion
+Cambio realizado: Se cambio el uso de print por una lista
+user_exit = ["Loading...", "You are exiting..."]
+
+Ejemplo 2 
+Sub-Competencia: Listas
+Linea 52
+Error: No habia error solo optimizacion
+Cambio realizado: Se cambio el uso de print por una lista
+menu_options = ["Welcome to the Menu","For Vacations Section enter 1", "For Sick Leave Section enter 2", "For Exit 3"]
+
+Ejemplo 3
+Sub-Competencia: Listas
+Linea 72
+Error: No habia error solo optimizacion
+Cambio realizado: Se cambio el uso de print por una lista
+return_to_menu_options = ["Enter 1 if you want to return to the main menu","Enter 0 if you do not want to return to the main menu"]
+
+Ejemplo 4
+Sub-Competencia: Listas
+Linea 122
+Error: No habia error solo optimizacion
+Cambio realizado: Se cambio el uso de print por una lista
+ilness_list = ["1. Cold","2. Covid","3. Gastroenteritis","4. Influeza","5. Medical Appointment", "6. Other"]
+
+
+
